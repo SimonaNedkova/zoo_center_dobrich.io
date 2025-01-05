@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('jungle-landscape-digital-art-illustration.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+nav {
+    background-color: #14604C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 80px;
+    width: auto;
+}
+
+nav .logo img:hover {
+    opacity: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #daa520;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(218, 165, 32, 0.8);
+    color: #daa520;
+    transform: scale(1.1);
+}
+
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 160px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: rgba(218, 165, 32, 0.8);
+    color: #daa520;
+}
+
+.top-section, .bottom-section {
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.top-section {
+    background-color: #83C1B0;
+    color: #daa520;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.bottom-section {
+    background-color: #E3F3EF;
+    color: #4CAF50;
+    justify-content: center;
+}
+
+.details-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.season {
+    margin: 20px 0;
+}
+
+.season h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.season h2 :nth-child(1) {
+    float: left;
+}
+
+.season p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.season p strong {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.day-off {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.image-section {
+    width: 100%;
+    height: 250px;
+    background-image: url('img5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-section h1 {
+    color: #daa520;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.tickets-section {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.tickets-section h1 {
+    font-size: 2.5rem;
+    color: #daa520;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tickets-section h2 {
+    font-size: 2rem;
+    color: #E0B548;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.tickets-table td {
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    font-size: 1.1rem;
+}
+
+.tickets-table tr {
+    background-color: #83C1B0;
+}
+
+.tickets-table td:first-child {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #14604C;
+}
+
+.tickets-table td:last-child {
+    color: white;
+    background-color: #14604C;
+}
+
+.tickets-table tr:nth-child(even) td {
+    background-color: #83C1B0;
+}
+
+.tickets-table tr:hover td {
+    background-color: #DFF0D8;
+    color: #000000;
+}
+
+.rules-section {
+    width: 100%;
+    padding: 0;
+    background-color: #14604C;
+}
+
+.rules-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-content {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #daa520;
+    font-weight: bold;
+    text-align: left;
+}
+
+.rule {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.rule h2 {
+    font-size: 1.8rem;
+    color: #E0B548;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rule p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6;
+}
+
+.image-content {
+    width: 100%;
+    padding-left: 20px;
+    height: 800px;
+}
+
+.image-content img {
+    width: 129%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+footer {
+    background-color: #2F816B ;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.footer .section {
+    width: 30%;
+    margin: 5px 0; 
+    padding: 5px; 
+    box-sizing: border-box;
+}
+
+.footer .logo {
+    text-align: left;
+}
+
+.footer .logo img {
+    height: 200px; 
+}
+
+.footer .contacts {
+    text-align: left;
+    color: #daa520; 
+}
+
+.footer .contacts p {
+    color: white; 
+}
+
+.footer .contacts a {
+    color: white; 
+    text-decoration: none;
+}
+
+.footer .contacts a:hover {
+    text-decoration: none;
+}
+
+.footer .visit {
+    text-align: left;
+    color: #daa520; 
+}
+
+.footer .visit ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.footer .visit li {
+    margin-bottom: 8px; 
+    color: white;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 15px; 
+}
+
+.footer .social-icon {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icon:hover {
+    transform: scale(1.1); 
+}
+
+
+footer .copyright {
+    margin-top: 15px; 
+    font-size: 14px;
+    color: #daa520; 
+}
+@media (max-width: 768px) {
+    .rules-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    .rules-section h1 {
+        font-size: 2rem;
+    }
+
+    .rule h2 {
+        font-size: 1.6rem;
+    }
+
+    .rule p {
+        font-size: 1.1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 8px 10px;
+    }
+    
+    .footer .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .logo img {
+        height: 150px;
+    }
+
+    .footer .contacts,
+    .footer .visit {
+        text-align: center;
+    }
+
+    .footer .social {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+
+
+
